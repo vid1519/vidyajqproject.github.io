@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+        #panel1,#panel2,#panel3, #flip {
+          padding: 5px;
+          text-align: center;
+          background-color: #e5eecc;
+          border: solid 1px #c3c3c3;
+        }
+        
+        #panel1,#panel2,#panel3 {
+          padding: 50px;
+          display: none;
+        }
+      </style>
+
+    </head>
+    <body>
+      <script>
+        $(document).ready(function(){
+          $("button.c1").hover(function(){
+            $("#p1").hide(3000),
+            $("button.c1").dblclick(function(){
+              $("#p1").show(3000);
+            });
+
+          });
+          $("button.c2").click(function(){
+            $("#p2").hide(3000);
+            $("#p2").show();
+          });
+          $("button.c3").click(function(){
+            $("#p3").hide(3000);
+          });
+          $("button.b4").click(function(){
+            $("#panel1").slideDown("slow");
+          });
+          $("button.b5").click(function(){
+            $("#panel2").slideDown("slow");
+          });
+          $("button.b6").click(function(){
+            $("#panel3").slideDown("slow");
+          });
+         
+          });
+      
+      </script>
+
+        <nav class="navbar navbar-expand-lg" style="background:burlywood;">
+            <div class="container-fluid">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdlHDz4rPBVeTFEvm3AlhVKKaZe9Tp-cyasw&usqp=CAU" style="width: 100px;height:100px;">
+              <a class="navbar-brand" href="#"><span style="color: white;font-size:30px;">47th</span> <span style="color: brown;font-size:40px;">Cafe</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: black;margin-left:600px;font-size:20px;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: black;font-size:20px;">This is us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;font-size:20px;">
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Beverages</a></li>
+                      <li><a class="dropdown-item" href="#">Starters</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Main menu</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: black;font-size:20px;">Online Order</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: black;font-size:20px;">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="signupform.html" style="color: black;font-size:20px;">Sign-up</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+          <div class="card text-bg-dark">
+            <img src="https://images.pexels.com/photos/1739748/pexels-photo-1739748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h5 style="margin-top: 90px;margin-left:30px;">Cafe & Restaurant Est.2035</h5>
+              <h1 class="card-title" style="font-size: 100px;margin-left:30px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight:bold;">Your Go-To Spot For</h1>
+              <h2 style="font-size: 40px;margin-left:30px;">Delicious Eats and Coffee.</h2>
+              <br><br>
+              <button style="color: white;border:2px solid white;background:none;margin-left:30px;padding:15px;width:200px;">ORDER NOW</button>
+              <button style="color: white;border:2px solid white;background:none;padding:15px;margin-left:50px;width:200px;"><a href="menu.html" style="color:white;text-decoration:none;">OUR MENU </a></button>
+              
+            </div>
+          </div>
+          <div style="background: burlywood;text-align:center;color:white;font-size:30px;height:60px;margin-bottom:10px;">Weekend Brunch | Saturday 9 am-2 pm</div>
+         
+          <div class="card mb-3" style="max-width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/04/00/bread-1867208_1280.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-4">
+                <div class="card-body">
+                  <h1 class="card-title" style="font-size:80px;font-weight:bold;">Eat</h1>
+                  <h3>Breakfast,Lunch and Artisanal Pastries.</h3>
+                  <p class="card-text" id="p1" style="text-align: justify;">"Start your day with a delightful breakfast featuring a variety of options to satisfy your morning
+                    cravings. Our lunch menu offers a tasty selection of dishes that will fuel your afternoon.And don't forget to treat yourself to our artisanal 
+                    pastries, freshly baked and bursting with flavors, perfect for any time of day.".</p>
+                    <button  class="c1" style="background: none;border:1px solid black;padding:10px;width:150px;">See More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="https://cdn.pixabay.com/photo/2015/01/14/15/47/tea-599227_1280.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+           
+              <div class="col-md-4">
+                <div class="card-body">
+                  <h1 class="card-title" style="font-size:80px;font-weight:bold;">Drink.</h1>
+                  <h3>The Freshest Cup in Town.</h3>
+                  <p class="card-text" id="p2" style="text-align: justify;">"Indulge in a world of delightful beverages at our café. From rich and aromatic coffees to refreshing teas and handcrafted specialty drinks, our menu is a haven for beverage enthusiasts. Whether you're seeking a caffeine boost, a soothing sip, or a unique flavor experience, our café has something to quench every thirst. Join us for a memorable journey through the world of drinks, all served in a cozy and welcoming atmosphere that makes every sip a moment of relaxation and enjoyment.".</p>
+                    <button class="c2" style="background: none;border:1px solid black;padding:10px;width:150px;">See Less</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+              
+          <div class="card mb-3" style="max-width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="https://images.pexels.com/photos/1267696/pexels-photo-1267696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid rounded-start" alt="...">
+                </div>
+           
+              <div class="col-md-4">
+                <div class="card-body">
+                  <h1 class="card-title" style="font-size:80px;font-weight:bold;">Enjoy.</h1>
+                  <h3>Make Yourself At Home.</h3>
+                  <p class="card-text" id="p3" style="text-align: justify;">"Discover a culinary paradise that awaits at our restaurant! With an exquisite menu, warm ambiance, and exceptional service, we invite you to savor the finest flavors in town. Whether you're celebrating a special occasion or looking for a casual dining experience, our restaurant offers a diverse range of dishes to tantalize your taste buds. Come and join us for an unforgettable dining adventure, where every meal is a celebration of taste and quality. Your table is set – we can't wait to welcome you!.".</p>
+                    <button  class="c3" style="background: none;border:1px solid black;padding:10px;width:150px;">Visit Us</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        
+         
+
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/2872747/pexels-photo-2872747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  class="card-img-top" alt="...">
+                <button class="b4">Click Me</button>
+                <div id="panel1"><p style="text-align: justify;font-size:20;">Sweets and desserts hold a special place in the world of cuisine, transcending cultures and boundaries with their universal appeal. Whether it's a decadent chocolate cake, a scoop of velvety ice cream, or a delicate macaron, these delectable creations provide a delightful finale to a meal or a sweet escape from the routine.</p></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/12679997/pexels-photo-12679997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  class="card-img-top" alt="...">
+                <button class="b5">Click Me</button>
+                <div id="panel2"><p style="text-align: justify;font-size:20;">Sweets and desserts hold a special place in the world of cuisine, transcending cultures and boundaries with their universal appeal. Whether it's a decadent chocolate cake, a scoop of velvety ice cream, or a delicate macaron, these delectable creations provide a delightful finale to a meal or a sweet escape from the routine.</p></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://images.pexels.com/photos/12673790/pexels-photo-12673790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  class="card-img-top" alt="...">
+                <button class="b6">Click Me</button>
+                <div id="panel3"><p style="text-align: justify;font-size:20;">Sweets and desserts hold a special place in the world of cuisine, transcending cultures and boundaries with their universal appeal. Whether it's a decadent chocolate cake, a scoop of velvety ice cream, or a delicate macaron, these delectable creations provide a delightful finale to a meal or a sweet escape from the routine.</p></div>
+              </div>
+            </div>
+            </div>
+          
+            </div>
+          </div>
+          <div class="d-flex flex-nowrap">
+            <div class="order-1 p-4" style="background:burlywood;">
+            <h1 style="color:white;font-weight:bold;">News Letter</h1>
+            <p style="color: white;font: weight 100px;">Stay upto date with all the latest from 47th Cafe</p>
+            <label style="color: white;">Email</label>
+            <input type="email"><input type="submit">
+            </div>
+            <div class="order-2 p-2" style="background: burlywood;">
+              <h1 style="color: white;font-weight:bold;margin-left:180px;">Talk to Us</h1>
+              <p style="margin-left:180px;color:white;">123-456-7890</p>
+              <p style="margin-left: 180px;color:white;" >Info@mysite.com</p>
+              <p style="margin-left: 180px;color:white;" >500 Terry Fransine St.</p> 
+              <p  style="margin-left: 180px;color:white;">Sanfransisco,CA 94158</p>
+              </div>
+            <div class="order-3 p-2" style="background:burlywood;">
+              <h1 style="color: white;font-weight:bold;margin-left:500px;">Instagram</h1>
+              <h1 style="color: white;font-weight:bold;margin-left:500px;">Facebook</h1>
+              <h1 style="color: white;font-weight:bold;margin-left:500px;">Twitter</h1>
+            </div>
+          </div>
+          
+    </body>
+</html>
