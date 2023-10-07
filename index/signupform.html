@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+    </head>
+<body style="background: url(https://images.pexels.com/photos/6207297/pexels-photo-6207297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);background-size:cover;">
+<script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      alert("Thank you for signing-up");
+    })
+  })
+</script>
+  <form style="margin-left:400px;margin-top:60px; width: 50%;background:rgba(0,0,0,0.6)">
+      <fieldset style="color: white;font-size:20px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Please Fill Your Details
+        <br><br>
+        <div class="mb-3">
+          <label style="color: white;font-size:20px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">First Name:</label>
+          <input type="text">
+          <br><br>
+          <label style="color: white;font-size:20px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Last Name:</label>
+          <input type="text"><br><br>
+
+          <label for="exampleInputEmail1" class="form-label" style="color: white;font-size:20px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Email Address:</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+       
+        </div><br><br>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label" style="color: white;font-size:20px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Password:</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div><br><br>
+
+        <label style="color: white;font-size:20px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BirthDate:</label>
+        <input type="date"><br><br>
+
+        <label style="color: white;font-size:20px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Phone Number:</label>
+        <input type="tel">
+        <br><br>
+
+        <label style="color: white;font-size:20px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Address:</label>
+        <textarea>Fill Your Address</textarea><br><br>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1" style="font-size:20px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color:white;">Check me out</label>
+        </div>
+        <br><br>
+        <button type="submit" class="btn btn-primary" style="color:black;font-size:20px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Submit</button>
+      </fieldset>
+      </form>
+
+
+</body>
+</html>
